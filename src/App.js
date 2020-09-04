@@ -57,10 +57,10 @@ function App() {
         setUser(null);
       }
     })
-    return () => {
-      //perform some cleanup actions 
-      unsubscribe();
-    }
+    // return () => {
+    //   //perform some cleanup actions 
+    //   unsubscribe();
+    // }
   },[user, username]);
 
   useEffect(() => {
