@@ -48,7 +48,7 @@ function Post({postId, user, username, caption, imageUrl}) {
             <div className="post__header">
             <Avatar
                 className="post__avatar"
-                alt="Rahul Ray"
+                alt={username}
                 src="/static/images/avatar/1.png"/>
             {/* header -> avatar + username */}
             <h3>{username}</h3>
@@ -85,7 +85,7 @@ function Post({postId, user, username, caption, imageUrl}) {
                         disabled={!comment}
                         onClick={postComment}
                         >
-                        POST
+                            POST
                     </button>
                 </form>
             )}
